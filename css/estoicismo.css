@@ -1,0 +1,126 @@
+@media screen and (min-width: 1024px) {
+*{
+    font-family: 'Playfair Display', serif;
+}
+
+
+main {
+  display: flex;
+  background-color: rgb(152, 191, 201);
+  width: 100%;
+  height:fit-content;
+}
+.submain {
+  border: solid black 0.2;
+  background-color: white;
+  align-items: center;
+  width: 90%;
+  height: fit-content;
+  margin: 2% auto;
+  padding: 3%;
+  box-shadow: 15px 13px 5px rgb(70, 66, 66);
+  border-radius: 1em;
+  margin-bottom: 10%;
+
+}
+
+h2,h3{
+  font-style: italic;
+  font-size: 40px;
+  margin: 1% 0;
+  filter: blur(5px);
+  background:  linear-gradient(#3c25c482, #190f3f70);
+  color: white;
+  border: solid 1px black;
+transition: ease-in-out 1s ;
+
+}
+h2:hover,h3:hover{
+
+transition: ease-in-out 0.5s ;
+  filter: blur(0);
+}
+
+
+}
+
+/*Este es el código para la resolución en "Tablets"*/
+
+@media screen and (min-width: 634px) and (max-width: 1024px) {
+
+    main {
+        display: flex;
+        background-image: url(../img/parquet.jpg);
+        width: 100%;
+        height:fit-content;
+      
+      }
+      .submain {
+        border: solid black 0.2;
+        background-color: white;
+        align-items: center;
+        width: 90%;
+        height: fit-content;
+        margin:3% auto;
+        padding: 3%;
+        box-shadow: 15px 13px 5px rgb(70, 66, 66);
+        border-radius: 1em;
+        margin-bottom: 10%;
+    font-size: 20px;
+        
+      }
+      h2,h3{
+        font-style: italic;
+        font-size: 40px;
+        margin: 1% 0;
+        background:  linear-gradient(#3c25c482, #190f3f70);
+        color: white;
+        border: solid 1px black;
+        filter:  opacity(0.5);
+      }
+}
+
+/*Este es el código para la resolución en "Móviles"*/
+
+@media screen and (max-width: 634px) {
+
+  body{
+
+    background-image: url(../img/agua1.jpg);
+
+  }
+
+  main {
+    display: flex;
+    width: 100%;
+    height:fit-content;
+  
+  }
+  .submain {
+    border: solid black 0.2;
+    background-color: white;
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+    margin: 3%  auto;
+    padding: 3%;
+    box-shadow: 15px 13px 10px rgb(119, 109, 109);
+    border-radius: 1em;
+    margin-bottom: 15%;
+    font-size: 20px;
+    
+  }
+
+  h2,h3{
+    font-style: italic;
+    font-size: 40px;
+    margin: 1% 0;
+    
+    background: linear-gradient(#f68782, #25989670);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+  }
+
+
+
+}

@@ -1,0 +1,115 @@
+*{
+  font-family: 'Playfair Display', serif;
+}
+
+footer {
+  background: linear-gradient(to bottom right, black, grey);
+ 
+  position: fixed;
+  bottom: 0;
+  min-height: 2.5em;
+  max-height: 6%;
+  width: 100%;
+  display: flex;
+}
+.redes {
+  justify-content: flex-end;
+
+  display: flex;
+  width: 99%;
+}
+.redes > a {
+  padding: 0.5%;
+  justify-content: space-around;
+}
+
+footer > .redes > label > img {
+  width: 100%;
+  height: 100%;
+}
+
+.redes > .red > a > img {
+  width: 4ex;
+  justify-content: center;
+  transition: ease-in 1s;
+}
+.redes > .red > a > img:hover {
+  transform: rotatex(360deg);
+  transition: ease-in 0.5s;
+}
+.press,
+.dont {
+  display: none;
+}
+
+@media only screen and (max-width: 634px) {
+  .redes a {
+    display: flex;
+  }
+  .sigueme {
+    display: none;
+    flex-direction: column-reverse;
+  }
+  .red {
+    position: absolute;
+    flex-direction: column;
+    display: none;
+    transition: ease 2s;
+    
+  }
+
+ 
+  .redes label {
+    display: flex;
+    width: 4.3em;
+    margin-right: 0.5em;
+  }
+  .press {
+    display: inline-block;
+  }
+  .dont {
+    display: inline-block;
+    width: 35%;
+  }
+
+
+  #follow:checked ~ label {
+    transform: scale(0.9);
+
+  }
+
+  #follow:checked ~ .red {
+    display: inline-block;
+    padding-right: 1.7rem;
+    margin-top: -7.1rem;
+    
+    
+}
+.press:hover{
+transform: scale(0.5);
+
+}
+.red img{
+
+padding-top: 15%;
+
+}
+}
+/*
+ animation: ver linear;
+
+  }
+
+  @keyframes ver {
+
+    from{
+
+      filter: blur(5px);
+
+    }
+    to{
+
+  filter: blur(0);
+      
+    }
+*/

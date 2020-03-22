@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Playfair Display', serif;
+
+}
+.subHeader {
+  color: rgb(124, 124, 184);
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/estrellas2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+}
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation ul {
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+  background-color: black;
+  padding: 0.4%;
+}
+
+.navigation> ul > li > a {
+  text-decoration: none;
+  color: grey;
+  border-radius: 5em;
+  justify-content: center;
+}
+
+.navigation> ul >li {
+  padding: 1em;
+  display: flex;
+}
+.navigation> ul >li > a:hover {
+  justify-content: center;
+
+  border-radius: 5em;
+  transition: ease-in-out 0.3s;
+  background: linear-gradient(to bottom right, black, rgba(28, 63, 216, 0.897));
+  transform: scale(1.3);
+  color: white;
+}
+
+input,
+.hamb ,li>a>img{
+  display: none;
+}
+/*Este es el código para la resolución en "Móviles"*/
+
+@media only screen and (max-width: 634px) {
+  .boton label {
+    display: block;
+    height: 2.5em;
+    background: black;
+    padding: 5px;
+  }
+
+  .hamb {
+    display: block;
+    border-radius: 20%;
+    box-shadow: 4px 4px 5px grey;
+    padding: 2px;
+    transition: ease-in-out 1.3s;
+  }
+  .hamb:hover {
+    cursor: pointer;
+
+    box-shadow: 4px 4px 15px gold;
+    transform: rotatez(180deg);
+    transition: ease-in-out 1.1s;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .navigation {
+    position: absolute;
+    width: 50%;
+    margin-left: -55%;
+    transition: ease-in-out 0.2s;
+    
+
+  }
+  .navigation li {
+    border-top: 1px solid #fff;
+  }
+  #movilMenu:checked ~ .navigation {
+    margin: 0;
+    z-index: 50;
+  transition:  ease-in 0.5s;
+  filter: opacity(0.9);
+  }
+    
+  
+  #movilMenu:checked ~  a {
+    justify-content: center;
+
+    border-radius: 5em;
+    transition: ease-in-out 0.3s;
+    background: linear-gradient(to bottom right,black,rgba(28, 63, 216, 0.897));
+    color: white;
+  }
+
+  .navigation>ul> li > a:hover {
+
+    transition: ease-in-out 0.3s;
+    background: none;
+    transform: scale(1);
+    color: white;
+  
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .navigation>ul>li {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    display: flex;
+  }
+  .navigation>ul>li>a>img{
+
+display: inline-block;
+width: 1.6em;
+
+
+  }
+}

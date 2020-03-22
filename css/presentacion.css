@@ -1,0 +1,287 @@
+@media screen and (min-width: 1024px) {
+  * {
+    font-family: "Playfair Display", serif;
+  }
+
+  body{
+    background:rgb(152, 191, 201);
+    background-size:100% ;
+}
+
+  main {
+    display: flex;
+    position: absolute;
+    background-color: rgb(152, 191, 201);
+    width: 100%;
+    height: fit-content;
+    
+  }
+  .submain {
+    background-color: white;
+    width: 90%;
+    padding: 3%;
+    margin: 3% auto;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 1em;
+		
+  }
+
+  .submain img {
+    float: right;
+    margin: 0.5% 1%;
+    width: 15rem;
+    border-radius: 5px;
+    animation: aparece linear 2s alternate 2;
+  }
+
+  @keyframes aparece {
+    0% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(0.3);
+    }
+    90% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+ 
+
+  #citas ul {
+    padding: 0;
+    display: flex;
+    width: 95%;
+  }
+
+  #citas li {
+    list-style: none;
+
+    width: 100%;
+  }
+
+  #citas img {
+    width: 100%;
+    animation: none;
+    transition: ease-in-out 1s;
+  }
+
+  #citas img:hover {
+    transform: scale(2) rotate(-10deg);
+  }
+
+
+.list {
+  display: none;
+}
+
+div#citas{
+  /*position: absolute;*/
+  z-index: 5;
+  left: 7%;
+  top: 0;
+}
+button#quotes {
+  display: none;
+}
+
+div#citas ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+}
+
+/*Este es el código para la resolución en "Tablets"*/
+
+@media screen and (min-width: 634px) and (max-width: 1024px) {
+  
+  body{
+    background-image: url(../img/parquet.jpg) ;
+
+
+    background-size:100% 100%;
+}
+
+  main {
+    display: flex;
+    width: 100%;
+    height: 47rem;
+    z-index: -1;
+    /*overflow: hidden;*/
+  }
+  .submain {
+    border: solid black 0.2;
+    background-color: white;
+
+    width: 90%;
+    height: auto;
+    margin: auto ;
+    padding: 3%;
+    box-shadow: 15px 13px 5px rgb(70, 66, 66);
+    border-radius: 1em;
+    z-index: 0;
+  }
+
+  .submain > .how {
+    float: right;
+    margin: 0 2%;
+    width: 15rem;
+    border-radius: 10px;
+    animation: aparece linear 2s alternate 2;
+  }
+
+  @keyframes aparece {
+    0% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(0.3);
+    }
+    90% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  #citas{
+    position: absolute;
+    z-index: 50;
+    left: -200%;
+    top: 10%;
+}
+button#quotes {
+  font-weight: bold ;
+  color: rgb(166, 189, 199);
+  margin: 3% 0;
+   padding: 1%;
+   background-image: url(../img/madera.jpg);
+   
+}
+
+
+
+button#quotes:focus + div#citas {
+    display: block;
+    background-color: rgba(59, 55, 55, 0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+  transition: ease-in 1s;
+  backdrop-filter: blur(3px);
+}
+
+
+
+
+div#citas ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+
+}
+
+  button#quotes {
+    display: block;
+}
+
+
+div#citas ul>li>img{
+  width: 50%;
+    
+}
+}
+
+/*Este es el código para la resolución en "Móviles"*/
+
+@media only screen and (max-width: 634px) {
+
+  body{
+    background-image: url(../img/agua1.jpg) ;
+    background-size:100% 100%;
+}
+
+  main {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .submain {
+    border: solid black 0.2;
+    background-color: white;
+    width: 90%;
+    height: fit-content;
+    padding: 3%;
+    margin:  auto;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 1em;
+    margin-bottom: 10%;
+  }
+
+  #citas{
+    position: absolute;
+    z-index: 50;
+    left: -200%;
+    top: 10%;
+}
+button#quotes {
+  font-weight: bold ;
+  color: rgb(166, 189, 199);
+  margin: 3% 0;
+   padding: 1%;
+   background-image: url(../img/agua.jpg);
+   
+}
+
+
+
+button#quotes:focus + div#citas {
+    display: block;
+    background-color: rgba(59, 55, 55, 0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+  transition: ease-in 1s;
+  backdrop-filter: blur(3px);
+}
+
+
+
+
+div#citas ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+
+}
+
+  button#quotes {
+    display: block;
+}
+
+
+div#citas ul>li>img{
+  width: 100%;
+    
+}
+
+.submain > .how{
+
+float: left;
+width:50%;
+margin: 2%;
+
+}
+  
+}
